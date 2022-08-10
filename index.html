@@ -13,21 +13,164 @@
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
 		/>
+
+		<!-- Swiper JS -->
+		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
 		<!-- Animate.css start -->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 		<!-- Animate.css end -->
 
-		<link rel="stylesheet" href="./css/main.min.css" />
-		<link rel="stylesheet" href="./css/styles.css" />
+		<!-- <link rel="stylesheet" href="./css/main.min.css" /> -->
+		<link rel="stylesheet" href="./css/main.css" />
 	</head>
 
-	<body data-body>
+	<body>
 		<!--customer-rewiews-->
 
-		
+		<section class="section reviews section--no-padding">
+			<div class="container">
+				<h2 hidden>Reviews</h2>
+				<article class="article">
+					<h2 hidden>Customer Reviews</h2>
 
-		<script src="./js/modal.js"></script>
-		<script src="./js/menu.js"></script>
+					<div class="swiper customerreviews">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="thumb">
+									<picture>
+										<source
+											media="(min-width: 1200px)"
+											srcset="
+												./images/5-testimonials/testimonials_1-L.jpg    1x,
+												./images/5-testimonials/testimonials_1-L@2x.jpg 2x
+											"
+											type="image/jpg"
+										/>
+										<source
+											media="(min-width: 768px)"
+											srcset="
+												./images/5-testimonials/testimonials_1-M.jpg    1x,
+												./images/5-testimonials/testimonials_1-M@2x.jpg 2x
+											"
+											type="image/jpg"
+										/>
+										<source
+											media="(max-width: 767px)"
+											srcset="
+												./images/5-testimonials/testimonials_1-S.png    1x,
+												./images/5-testimonials/testimonials_1-S@2x.png 2x
+											"
+											type="image/jpg"
+										/>
+										<img
+											class="thumb__avatar"
+											src="./img/customers/testimonials1.jpg"
+											alt="picture Emily"
+											width="85"
+											height="85"
+											loading="lazy"
+										/>
+									</picture>
+								</div>
+								<div class="swiper-slide__content">
+									<div class="swiper-slide__thumb">
+										<p class="swiper-slide__text">
+											Great store with a wide variety of delicious ice cream! The best ice cream in the world!!!
+										</p>
+									</div>
+								</div>
+
+								<div class="swiper-slide__subtitle">
+									<p>Emily, Los Angeles</p>
+								</div>
+							</div>
+
+							<div class="swiper-slide">
+								<div class="thumb">
+									<picture>
+										<source
+											media="(min-width: 1200px)"
+											srcset="
+												./images/5-testimonials/testimonials_2-L.png    1x,
+												./images/5-testimonials/testimonials_2-L@2x.png 2x
+											"
+											type="image/png"
+										/>
+										<source media="(min-width: 768px)" srcset="" type="image/jpg" />
+										<source media="(max-width: 767px)" srcset="" type="image/jpg" />
+										<img
+											class="thumb__avatar"
+											src="./img/customers/testimonials2.jpg"
+											alt="picture Nancy"
+											width="85"
+											height="85"
+											loading="lazy"
+										/>
+									</picture>
+								</div>
+								<div class="swiper-slide__content">
+									<div class="swiper-slide__thumb">
+										<p class="swiper-slide__text">
+											The best, tastiest ice cream I have ever tasted! I'll be back tomorrow for a new batch!
+										</p>
+									</div>
+								</div>
+
+								<div class="swiper-slide__subtitle">
+									<p>Nancy, Chicago</p>
+								</div>
+							</div>
+
+							<div class="swiper-slide">
+								<div class="thumb">
+									<picture>
+										<source media="(min-width: 1200px)" srcset="" type="image/jpg" />
+										<source media="(min-width: 768px)" srcset="" type="image/jpg" />
+										<source media="(max-width: 767px)" srcset="" type="image/jpg" />
+										<img
+											class="thumb__avatar"
+											src="./img/customers/testimonials3.jpg"
+											alt="picture Katty"
+											loading="lazy"
+										/>
+									</picture>
+								</div>
+								<div class="swiper-slide__content">
+									<div class="swiper-slide__thumb">
+										<p class="swiper-slide__text">this is something incredible! I remembered the taste of childhood!</p>
+									</div>
+								</div>
+
+								<div class="swiper-slide__subtitle">
+									<p>Katty, New York</p>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+					</div>
+
+					<!-- Swiper JS -->
+					<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+					<!-- Initialize Swiper -->
+					<!-- <script>
+						var swiper = new Swiper(".customerreviews", {
+							spaceBetween: 30,
+							pagination: {
+								el: ".swiper-pagination",
+								clickable: true,
+							},
+						});
+					</script> -->
+				</article>
+			</div>
+		</section>
+
+		<!-- <script src="./js/modal.js"></script>
+		<script src="./js/menu.js"></script> -->
 		<!-- <script src="./js/mobile-menu.js"></script> -->
+		<script src="./js/script.js"></script>
 	</body>
 </html>
